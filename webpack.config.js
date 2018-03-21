@@ -9,7 +9,7 @@ const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 // 获取路径方法，默认js文件
 const getFileParams = (type = 'js') => {
     let result = {};
-    glob.sync('./app/' + type + '/*.*').map(function (item) {
+    glob.sync('./app/' + type + '/*.*').forEach(function (item) {
         result[item.match(/[\w]+\./i)[0].slice(0, -1)] = item;
     });
     return result;

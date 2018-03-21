@@ -16,4 +16,4 @@ $ cnpm install
 $ webpack
 ```
 
-> 生成压缩代码在`dist/(js|css)`路径中
+> 生成压缩代码在`dist/(js|css)`路径中。
